@@ -30,23 +30,27 @@ function processArguments(val1, val2) {
         case "concert-this":
             var artist = val2;
             concertthis2(artist);
+            logData("concert-this " + val2);
             break;
 
         case "spotify-this-song":
             var song = val2;
             spotifyThisSong(song);
             console.log("spotify-this-song")
+            logData("spotify-this-song " + val2);
             break;
 
         case "movie-this":
             var movie = val2
             moviethis(movie)
             console.log("movie-this")
+            logData("movie-this " + val2);
             break;
 
         case "do-what-it-says":
             console.log("do-what-it-says")
             doWhatItSays()
+            logData("do-what-it-says ");
             break;
     }
 }
@@ -136,6 +140,10 @@ function doWhatItSays() {
     });
 }
 
+function logData(data) {
+    var divider = "\n------------------------------------------------------------\n\n";
+    fs.appendFile("log.txt", data + divider, function (err) {
+        if (err) throw err;
+    });
 
-
-
+}
