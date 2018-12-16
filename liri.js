@@ -6,7 +6,7 @@ var keys = require("./keys");
 var moment = require('moment');
 var Spotify = require('node-spotify-api');
 
-console.log(keys.spotify)
+// console.log(keys.spotify)
 // var spotify = new Spotify(keys.spotify);
 var request = require("request")
 
@@ -111,7 +111,7 @@ function moviethis(movie) {
         response => {
             var res = response.data;
             // console.log(response.data);
-            console.log(res);
+            // console.log(res);
             console.log("--------------------");
             console.log("Title: " + res.Title);
             console.log("Year: " + res.Year);
