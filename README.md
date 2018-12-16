@@ -17,6 +17,8 @@ to use the program:
      * Venue location
 
      * Date of the Event (use moment to format this as "MM/DD/YYYY")
+     Example: concert-thisexample.png
+     
 2) type node liri.js spotify-this-song '<song name here>'`
 
    * This will show the following information about the song in your terminal/bash window
@@ -28,6 +30,7 @@ to use the program:
      * A preview link of the song from Spotify
 
      * The album that the song is from
+     Example:spotify-this-song.png
 3) Type node liri.js movie-this '<movie name here>'`
 
    * This will output the following information to your terminal/bash window:
@@ -41,6 +44,10 @@ to use the program:
        * Language of the movie.
        * Plot of the movie.
        * Actors in the movie.
+       Example: movie-this.png
+4) Type node liri.js do-what-it-says
+reads the random.txt file example:do-what-it-says.png
+
 Where users can get help with your project:
 Users can email denise@girardeau.org for assistance with this project.
 
